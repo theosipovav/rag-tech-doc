@@ -1,0 +1,40 @@
+# RAG System Requirements
+
+# Core Framework
+fastapi>=0.109.0
+uvicorn[standard]>=0.27.0
+pydantic>=2.5.0
+pydantic-settings>=2.1.0
+
+# PDF Parsing
+pymupdf>=1.23.0
+pdfplumber>=0.10.0
+
+# LlamaIndex & Chunking
+llama-index>=0.10.0
+llama-index-core>=0.10.0
+llama-index-node-parser-sentence-window>=0.1.0
+
+# Embeddings - BGE-M3
+sentence-transformers>=2.3.0
+FlagEmbedding>=1.2.0
+
+# Vector Database
+qdrant-client[http]>=1.7.0
+
+# Reranking
+llama-index-postprocessor-flag-embedding-reranker>=0.1.0
+
+# LLM Inference (vLLM client)
+openai>=1.10.0
+httpx>=0.26.0
+
+# Frontend
+streamlit>=1.30.0
+
+# Utilities
+aiofiles>=23.2.0
+python-multipart>=0.0.6
+tenacity>=8.2.0
+loguru>=0.7.0
+numpy>=1.26.0
